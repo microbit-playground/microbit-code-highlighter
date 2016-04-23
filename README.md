@@ -5,3 +5,4 @@
 ### Examples
 
 Is in use at [microbit playground](https://microbit-playground.co.uk).
+[Demo of Themes Here](http://microbit-playground.co.uk/microbit-code-highlighter/)
