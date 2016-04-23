@@ -1,8 +1,9 @@
+## [Demo](http://microbit-playground.co.uk/microbit-code-highlighter/)
 ### Code Highlighter for Microbit Python
-![Minion](http://octodex.github.com/images/minion.png)
-![Minion](http://octodex.github.com/images/minion.png)
-![Minion](http://octodex.github.com/images/minion.png)
-![Minion](http://octodex.github.com/images/minion.png)
+![Example 1](microbit-playground.co.uk/microbit-code-highlighter/images/1.png)
+![Example 2](microbit-playground.co.uk/microbit-code-highlighter/images/2.png)
+![Example 3](microbit-playground.co.uk/microbit-code-highlighter/images/3.png)
+![Example 4](microbit-playground.co.uk/microbit-code-highlighter/images/4.png)
 
 ### Examples
 
