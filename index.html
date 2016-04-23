@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <link href="prism-coy.css" rel="stylesheet" type="text/css" id="stylelink">
+    <title>Code Highlighting for Microbit Python</title>
+    <script type="text/javascript">
+        function changeScheme() {
+            $('#stylelink').attr('href', $('#colourselector').val());
+        }
+    </script>
+
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <!-- JQUERY loaded for dropdown picker ONLY. You do not need it -->
+    <script src="prism.js"></script>
+
+    <h1>Microbit Python Code Highlighting with Prism JS </h1>
+    <p>(Slightly) modified themes and python parser for <a href="http://prismjs.com/">PrismJS</a>.</p>
+    <p>To use on website, add these to your &lt;HEAD&gt; block:</p>
+    <pre>
+&lt;script src=&quot;prism.js&quot;&gt;&lt;/script&gt;
+&lt;link href=&quot;prism-coy.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; id=&quot;stylelink&quot;&gt;
+</pre>
+    <p>To call the code highlighter within your HTML document enclose the code with PRE &amp; CODE tags. Eg:</p>
+    <pre>
+&lt;pre&gt;&lt;code class="language-pythonmicrobit"&gt;
+
+from microbit import *
+import random
+
+&lt;/code&gt;&lt;/pre&gt;
+</pre>
+    <p>Examples of it in use at <a href="https://microbit-playground.co.uk/">microbit playground</a>.
+        <form action="#" name="colour" id="colour" onsubmit="return false;">
+            <select id="colourselector" name="colour" onchange="changeScheme();">
+                <option value="prism-coy.css">prism-coy.css</option>
+                <option value="prism-atom-dark.css">prism-atom-dark.css</option>
+                <option value="prism-funky.css">prism-funky.css</option>
+                <option value="master/prism-okaidia.css">prism-okaidia.css</option>
+                <option value="prism-xonokai.css">prism-xonokai.css</option>
+                <option value="prism.css">prism-xonokai.css</option>
+
+            </select>
+        </form>
+        <pre>
+<code class="language-pythonmicrobit">
+"""
+    Harry Potter Sorting Hat
+    MIT  Licence
+
+"""
+# import microbit and random modules
+from microbit import *
+import random
+
+# create a list of strings called HOUSES
+HOUSES   = ["Gryffindor",
+            "Slytherin",
+            "Ravenclaw",
+            "Hufflepuff",
+           ]
+
+# create an endless loop waiting for button_a to be pressed
+while True:
+    if button_a.is_pressed():
+        display.scroll(random.choice(HOUSES))
+    sleep(100)
+</code></pre>
+</body>
+
+</html>
